@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الصخرة للرخام والجرانيت | Al-Sakhra</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold: #d4af37;
+            --dark: #0a0a0a;
+            --gray: #1f1f1f;
+        }
+
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: var(--dark);
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* واجهة الموقع */
+        .hero {
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: radial-gradient(circle, #1a1a1a 0%, var(--dark) 100%);
+            border-bottom: 1px solid #333;
+        }
+
+        .hero h1 {
+            font-size: 4em;
+            font-weight: 300;
+            color: var(--gold);
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            color: #888;
+            font-weight: 300;
+            letter-spacing: 1px;
+            margin-top: 10px;
+        }
+
+        /* المعرض */
+        .section-title {
+            text-align: center;
+            font-size: 2em;
+            font-weight: 300;
+            color: var(--gold);
+            margin: 50px 0 30px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 0 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 4px;
+            opacity: 0.8;
+            transition: all 0.5s ease;
+            cursor: pointer;
+        }
+
+        .gallery img:hover {
+            opacity: 1;
+            transform: scale(1.03);
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+        }
+
+        /* قسم التواصل */
+        .contact-section {
+            padding: 60px 20px 20px;
+            background-color: var(--gray);
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        .cards-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            max-width: 1000px;
+            margin: 40px auto 0;
+        }
+
+        .contact-card {
+            background-color: var(--dark);
+            border: 1px solid #333;
+            padding: 40px 30px;
+            border-radius: 8px;
+            width: 260px;
+            transition: all 0.4s ease;
+        }
+
+        .contact-card:hover {
+            border-color: var(--gold);
+            transform: translateY(-5px);
+        }
+
+        .contact-card h3 {
+            color: var(--gold);
+            font-size: 1.8em;
+            margin: 0 0 10px;
+            font-weight: 400;
+        }
+
+        .contact-card p {
+            color: #aaa;
+            margin-bottom: 25px;
+            font-size: 1.1em;
+        }
+
+        .btn {
+            display: block;
+            padding: 12px 0;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .btn-whatsapp {
+            background-color: var(--gold);
+            color: var(--dark);
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #fff;
+            color: var(--dark);
+        }
+
+        .btn-call {
+            background-color: transparent;
+            color: var(--gold);
+            border: 1px solid var(--gold);
+        }
+
+        .btn-call:hover {
+            background-color: var(--gold);
+            color: var(--dark);
+        }
+
+        /* تنسيق توقيع المبرمج */
+        .footer-credit {
+            margin-top: 60px;
+            padding-top: 25px;
+            border-top: 1px solid #333;
+            text-align: center;
+        }
+
+        .footer-credit p {
+            color: #888;
+            font-size: 1.1em;
+            margin: 0;
+        }
+
+        .developer-name {
+            color: var(--gold);
+            text-decoration: none;
+            font-weight: 700;
+            transition: all 0.3s ease;
+        }
+
+        .developer-name:hover {
+            color: #fff;
+            text-shadow: 0 0 10px rgba(212, 175, 55, 0.6);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <h1>الصخرة</h1>
+        <p>للرخام والجرانيت | AL-SAKHRA MARBLE</p>
+    </div>
+
+    <h2 class="section-title">أحدث أعمالنا</h2>
+    
+    <div class="gallery">
+        <img src="1.jpeg" alt="رخام">
+        <img src="2.jpeg" alt="رخام">
+      <img src="3.jpeg" alt="رخام">
+      <img src="4.jpeg" alt="رخام">
+      <img src="5.jpeg" alt="رخام">
+      <img src="6.jpeg" alt="رخام">
+    </div>
+
+    <div class="contact-section">
+        <h2 class="section-title" style="margin-top: 0;">تواصل مع الإدارة</h2>
+        
+        <div class="cards-container">
+            <div class="contact-card">
+                <h3>أ. حاتم رجب</h3>
+                <p>إدارة المبيعات والتعاقدات</p>
+                <a href="https://wa.me/201115682114" class="btn btn-whatsapp">تواصل واتساب</a>
+                <a href="tel:+201003906067" class="btn btn-call">اتصال هاتفي</a>
+            </div>
+
+            <div class="contact-card">
+                <h3>أ. سيد سليم</h3>
+                <p>إدارة التنفيذ والتركيبات</p>
+                <a href="https://wa.me/201148650703" class="btn btn-whatsapp">تواصل واتساب</a>
+                <a href="tel:+201148650703" class="btn btn-call">اتصال هاتفي</a>
+            </div>
+        </div>
+
+        <!-- توقيعك واسمك اللي هيروح للفيس بوك -->
+        <div class="footer-credit">
+            <p>تم إنشاء الموقع بواسطة <a href="https://www.facebook.com/omar.a.ragab.108742" target="_blank" class="developer-name">Omar Ahmed Ragab</a></p>
+        </div>
+        </div>
+    </div>
+
+</body>
+</html>
